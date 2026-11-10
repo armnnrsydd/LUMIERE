@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUMIERE</title>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    
+<!-- NAVBAR -->
+<nav class="navbar">
+
+    <!-- LOGO -->
+    <a href="#home" class="nav-logo">
+        <h1>LUMIERE</h1>
+        <p>W E L L N E S S</p>
+    </a>
+
+    <!-- HAMBURGER -->
+    <button class="hamburger" id="hamburger"
+        aria-label="Toggle navigation"
+        aria-expanded="false">
+        <i data-feather="menu"></i>
+    </button>
+
+    <!-- NAVIGATION -->
+    <div class="navbar-menu" id="navbarMenu">
+
+        <div class="navbar-nav">
+            <a href="#home">HOME</a>
+            <a href="#products">PRODUCTS</a>
+            <a href="#about">ABOUT</a>
+        </div>
+
+    </div>
+
+    <!-- EXTRA -->
+    <div class="navbar-extra">
+
+        <button id="cartToggle" aria-label="Open shopping cart">
+            <i data-feather="shopping-bag"></i>
+            <span id="cartCount">0</span>
+        </button>
+
+        <button id="dark-mode-toggle"
+            aria-label="Toggle dark mode">
+            <i data-feather="moon"></i>
+        </button>
+
+    </div>
+
+</nav>
+
+<div class="cart-panel" id="cartPanel">
+
+    <div class="cart-header">
+        <h2>YOUR CART</h2>
+        <button id="closeCart">x</button>
+    </div>
+
+    <div id="cartItems">
+        <p>Your cart is empty.</p>
+    </div>
+
+    <div class="cart-footer">
+        <h3>Total: RM <span id="cartTotal">0.00</span></h3>
+    </div>
+
+</div>
+<!-- NAVBAR END -->
+
+
+    <!-- HERO SECTION -->
+<section id="home" class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <main class="hero-content">
+
+        <span class="hero-subtitle">
+            THE ART OF SKINCARE
+        </span>
+
+        <h1 class="hero-title">
+            Your Skin,<br>
+            <i>Your Story.</i>
+        </h1>
+
+        <p class="hero-description">
+            Discover the beauty of your skin.
+            Embrace confidence in every layer.
+        </p>
+
+        <a href="#products" class="hero-btn">
+            EXPLORE COLLECTION
+            <span>↗</span>
+        </a>
+
+    </main>
+
+    <div class="hero-bottom">
+        <span>01 — 03</span>
+        <span>DISCOVER LUMIERE</span>
+    </div>
+
+</section>
+<!-- HERO SECTION END -->
+
+   <!-- PRODUCTS SECTION -->
+<section id="products" class="products">
+
+    <div class="products-heading">
+        <span>OUR COLLECTION</span>
+        <h2>Discover Your <i>Glow.</i></h2>
+        <p>Thoughtfully curated skincare for your everyday ritual.</p>
+    </div>
+
+    <div class="row">
+
+        <div class="store-card">
+            <div class="store-image">
+                <img src="store-card1.avif" alt="Retinol">
+                <span class="product-tag">BEST SELLER</span>
+            </div>
+            <div class="store-info">
+                <h3>RETINOL</h3>
+                <p>Renew. Restore. Rejuvenate.</p>
+                <h4>RM 59.00</h4>
+                <button class="store-card-price"
+                        data-name="Retinol"
+                        data-price="59">
+                        ADD TO CART
+                </button>
+            </div>
+        </div>
+
+        <div class="store-card">
+            <div class="store-image">
+                <img src="store-card2.avif" alt="Brightening">
+            </div>
+            <div class="store-info">
+                <h3>BRIGHTENING</h3>
+                <p>Reveal your natural radiance.</p>
+                <h4>RM 49.00</h4>
+                <button class="store-card-price"
+                        data-name="Brightening"
+                        data-price="49">
+                        ADD TO CART
+                    </button>
+            </div>
+        </div>
+
+        <div class="store-card">
+            <div class="store-image">
+                <img src="store-card3.avif" alt="Vitamin C">
+            </div>
+            <div class="store-info">
+                <h3>VITAMIN C</h3>
+                <p>Brighten. Protect. Glow.</p>
+                <h4>RM 55.00</h4>
+                <button class="store-card-price"
+                        data-name="Vitamin C"
+                        data-price="55">
+                        ADD TO CART</button>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+<!-- PRODUCTS SECTION END -->
+
+    <!-- ABOUT SECTION -->
+
+     <section class="about" id="about">
+
+        <div class="about-container">
+
+            <div class="about-image">
+                <img src="about.png" alt="LUMIERE Brand">
+            </div>
+
+            <div class="about-content">
+                <span class="about-subtitle">
+                    DISCOVER LUMIERE
+                </span>
+
+                <h2> More Than Beauty,
+                    <span>It's An Experience.</span>
+                </h2>
+
+                <p>
+                     At LUMIERE, we believe that true beauty lies in
+                simplicity, confidence, and individuality.
+                Our mission is to bring elegance into everyday life
+                through carefully curated products and timeless design.
+                </p>
+
+                <p>
+                    Every detail reflects our passion for quality,
+                sophistication, and the art of living beautifully.
+                </p>
+
+            </div>
+
+        </div>
+
+     </section>
+
+    <!-- ABOUT SECTION END -->
+
+   
+<!-- FOOTER SECTION -->
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <div class="footer-brand">
+            <a href="#home" class="footer-logo">LUMIERE</a>
+            <span>W E L L N E S S</span>
+
+            <p>
+                Embrace your beauty.<br>
+                Discover your confidence.
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <h3>EXPLORE</h3>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#about">About Us</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>FOLLOW US</h3>
+            <a href="https://instagram.com">Instagram</a>
+            <a href="https://tiktok.com">TikTok</a>
+            <a href="https://facebook.com">Facebook</a>
+        </div>
+
+        <div class="footer-contact">
+            <h3>STAY CONNECTED</h3>
+            <p>Discover more about the world of LUMIERE.</p>
+            <a href="mailto:hello@lumiere.com">
+                CONTACT US ↗
+            </a>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>© 2026 LUMIERE. All Rights Reserved.</p>
+
+        <a href="#home">BACK TO TOP ↑</a>
+
+        <p>Designed & Developed by Arman.</p>
+
+    </div>
+
+</footer>
+<!-- FOOTER SECTION END -->
+
+
+
+    <script src="script.js"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+
+</html>
